@@ -86,7 +86,7 @@
   let geojsonLayer;
 
   // Cargar GeoJSON LOCAL
-  fetch("ecuador_provincias_compacto_simpl.geojson")
+  fetch("ecuador_provincias_compacto_simpl.geojson?v=2")
     .then(r => r.json())
     .then(data => {
       geojsonLayer = L.geoJSON(data, {
@@ -104,3 +104,4 @@
 
 </body>
 </html>
+
